@@ -1,3 +1,4 @@
+/* Importa todos os arquivos CSS diretamente em um só */
 @import url(global.css);
 @import url(utility.css);
 @import url(buttons.css);

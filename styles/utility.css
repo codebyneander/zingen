@@ -1,58 +1,129 @@
 .py-base {
   padding-block: var(--py-base);
 }
+/* Define padding vertical padrão usando variável CSS */
+.py-base {
+  padding-block: var(--py-base);
+}
 
+/* Define padding vertical grande usando variável CSS */
 .py-lg {
   padding-block: var(--py-lg);
 }
 
+/* Define padding vertical extra grande usando variável CSS */
 .py-xl {
   padding-block: var(--py-xl);
 }
 
+/* Define padding horizontal grande usando variável CSS */
 .px-lg {
   padding-inline: var(--px-lg);
 }
 
+/* Container centralizado com largura máxima controlada por variável */
 .container {
-  --max-width: 375px;
-  width: min(var(--max-width), 100% - var(--px-lg) * 2);
-  border: solid violet;
-  margin-inline: auto;
+  --max-width: 375px; /* Largura máxima padrão para mobile */
+  width: min(var(--max-width), 100% - var(--px-lg) * 2); /* Responsivo */
+  border: solid violet; /* Borda para visualização */
+  margin-inline: auto; /* Centraliza horizontalmente */
 }
 
+/* Esconde elemento no mobile */
 .desktop-only { /* Usado no mobile */
   display: none;
 }
 
+/* Grid para colunas com espaçamento */
 .even-columns {
   display: grid;
   gap: 1rem;
 }
 
+/* Atalho para display flex */
 .flex {
   display: flex;
 }
 
+/* Atalho para gap de 1rem */
 .gap-1 {
   gap: 1rem;
 }
 
+/* Atalho para display grid */
 .grid {
   display: grid;
 }
 
+/* Estilos para telas grandes (desktop) */
 @media (width >= 80em) {
   .container {
-    --max-width: 80rem; /* 1280px */
+    --max-width: 80rem; /* 1280px para desktop */
   }
 
+  /* Mostra elemento apenas no desktop */
   .desktop-only { /* Usado no Desktop */
     display: initial;
   }
 
+  /* Distribui colunas igualmente no desktop */
   .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+  }
+}
+
+.py-lg {
+  padding-block: var(--py-lg); /* Aplica espaçamento vertical (cima/baixo) usando a variável --py-lg */
+}
+
+.py-xl {
+  padding-block: var(--py-xl); /* Aplica espaçamento vertical maior usando a variável --py-xl */
+}
+
+.px-lg {
+  padding-inline: var(--px-lg); /* Aplica espaçamento horizontal (esquerda/direita) usando a variável --px-lg */
+}
+
+.container {
+  --max-width: 375px; /* Define largura máxima padrão do container */
+  width: min(var(--max-width), 100% - var(--px-lg) * 2); /* Garante que a largura não ultrapasse o máximo e respeite o padding horizontal */
+  border: solid violet; /* Adiciona uma borda violeta ao container (provavelmente para visualização) */
+  margin-inline: auto; /* Centraliza o container horizontalmente */
+}
+
+.desktop-only { /* Usado no mobile */
+  display: none; /* Esconde elementos com essa classe em telas menores (mobile) */
+}
+
+.even-columns {
+  display: grid; /* Usa grid layout para distribuir os elementos */
+  gap: 1rem; /* Espaçamento entre os elementos do grid */
+}
+
+.flex {
+  display: flex; /* Ativa o flexbox para o elemento */
+}
+
+.gap-1 {
+  gap: 1rem; /* Espaçamento entre itens em layouts grid ou flex */
+}
+
+.grid {
+  display: grid; /* Ativa o grid layout para o elemento */
+}
+
+@media (width >= 80em) {
+  .container {
+    --max-width: 80rem; /* Aumenta a largura máxima do container para telas grandes (desktop) */
+  }
+
+  .desktop-only { /* Usado no Desktop */
+    display: initial; /* Exibe elementos com essa classe em telas grandes */
+  }
+
+  .even-columns {
+    grid-auto-flow: column; /* Organiza os itens em colunas automaticamente */
+    grid-auto-columns: 1fr; /* Faz com que cada coluna tenha o mesmo tamanho */
   }
 }
