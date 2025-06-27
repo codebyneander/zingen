@@ -72,6 +72,7 @@ Define a cor de fundo do body usando a variável global.
 */
 body {
   background-color: var(--bg-color);
+    overflow-x: hidden;
 }
 
 /* 
