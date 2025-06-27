@@ -22,7 +22,6 @@
 .container {
   --max-width: 375px; /* Largura máxima padrão para mobile */
   width: min(var(--max-width), 100% - var(--px-lg) * 2); /* Responsivo */
-  border: solid violet; /* Borda para visualização */
   margin-inline: auto; /* Centraliza horizontalmente */
 }
 
@@ -42,9 +41,17 @@
   display: flex;
 }
 
+.items-center {
+  align-items: center;
+}
+
 /* Atalho para gap de 1rem */
 .gap-1 {
   gap: 1rem;
+}
+
+.gap-1\.5 {
+  gap: 1.5rem;
 }
 
 /* Atalho para display grid */
