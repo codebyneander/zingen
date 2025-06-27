@@ -18,6 +18,11 @@ Foi desenvolvido como parte do desafio prático da formação **Full-Stack da Ro
 
 O principal objetivo foi consolidar conhecimentos de **HTML5** e **CSS3**, elevando o nível com a **introdução a Media Queries**, permitindo a adaptação do layout para dispositivos mobile. Este é o **primeiro projeto em que implementei responsividade**, representando um marco importante na minha curva de aprendizado.
 
+### 🌐 Deploy 
+
+[![Veja ao Vivo](https://img.shields.io/badge/👁️%20Veja%20ao%20Vivo-000?style=flat-square&logo=google-chrome&logoColor=white)](https://codebyneander.github.io/zingen)
+
+
 ---
 
 ## ✨ O que você encontrará aqui
