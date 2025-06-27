@@ -32,6 +32,13 @@
   --fs-lg: 1.25rem; /* Figma: H3 20px */
   --fs-xl: 1.5rem; /* Figma: H2 24px */
   --fs-2xl: 2.5rem; /* Figma: H1 40px */
+
+  /* Dispositivos pequenos */
+  --py-base: 1rem;
+  --py-lg: 1.5rem;
+  --py-xl: 3rem;
+
+  --px-lg: 1.5rem;   
 }
 
 html {
@@ -79,5 +86,11 @@ ul[role="list"] {
   --fs-lg: 2rem; /* Figma: H3 32px */
   --fs-xl: 3rem; /* Figma: H2 48px */
   --fs-2xl: 4rem; /* Figma: H1 64px */
+
+  /*Calculo para telas grandes*/
+  --py-base: 1.5rem;
+  --py-lg: 2.5rem;
+  --py-xl: 5rem;
+  --px-lg: 2rem;
   }
 }
