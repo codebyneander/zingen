@@ -15,10 +15,16 @@
   <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Teste</h1>
-    </div>
-  </header>
+  <div class="flex gap-1">
+  <span href="#" class="btn btn-sm">Label</span>
+  <a href="#" class="btn btn-md">Label</a>
+  <button href="#" class="btn btn-lg">Label</button>
+  </div>
+
+   <div class="flex gap-1">
+  <span aria-label="Label" href="#" class="btn btn-sm"></span>
+  <a aria-label="Label" href="#" class="btn btn-md"></a>
+  <button aria-label="Label" href="#" class="btn btn-lg"></button>
+  </div>
 </body>
 </html>
