@@ -1,6 +1,3 @@
-.py-base {
-  padding-block: var(--py-base);
-}
 /* Define padding vertical padrão usando variável CSS */
 .py-base {
   padding-block: var(--py-base);
