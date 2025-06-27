@@ -104,6 +104,19 @@ a {
   color: inherit;
 }
 
+/* Hover do link, Imagem de demonstração: assets/demo/preview-links-hover.png */
+a:hover {
+  background: linear-gradient(
+    90deg,
+    var(--brand-color-secondary) 0%,
+    var(--brand-color-primary) 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* 
 Remove marcadores de listas para listas com role=\"list\" (acessibilidade).
 */
