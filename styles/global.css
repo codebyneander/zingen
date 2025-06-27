@@ -124,6 +124,11 @@ ul[role="list"] {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
 /* 
 Media query para telas grandes (mínimo 80em ~1280px):
 Aumenta tamanhos de fonte e espaçamentos para melhor proporção visual em telas amplas.
